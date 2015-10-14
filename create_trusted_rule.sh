@@ -20,18 +20,15 @@ cacert=$(puppet config print localcacert)
 
 read -r -d '' trusted_call << RULE_JSON
 {
-    "name": "Trusted_$trusted_extension",
+    "name": "Trusted_$trusted_value",
     "classes": {},
     "environment": "production",
     "environment_trumps": false,
     "parent": "00000000-0000-4000-8000-000000000000",
-    "rule": [
-      "and",
-        [ "=",
+    "rule": [ "=",
           [ "trusted", "extensions", "$trusted_extension" ],
           "$trusted_value"
         ],
-    ],
     "variables": {}
 }
 RULE_JSON
@@ -39,7 +36,7 @@ RULE_JSON
 curl -X POST -H "Content-type: application/json" \
 --dump-header - \
 --location \
---data $trusted_call \
+--data "$trusted_call" \
 --cert   $cert \
 --key    $key \
 --cacert $cacert \
