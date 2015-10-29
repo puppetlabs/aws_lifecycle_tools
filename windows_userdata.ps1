@@ -12,8 +12,8 @@ $PP_INSTANCE_ID = $AWS_INSTANCE_ID
 
 $PP_IMAGE_NAME = $webclient.DownloadString("http://169.254.169.254/latest/meta-data/ami-id")
 
-<%-# these are all the OIDs that we may map or already have -%>
-<%-# https://docs.puppetlabs.com/puppet/latest/reference/ssl_attributes_extensions.html -%>
+# these are all the OIDs that we may map or already have
+# https://docs.puppetlabs.com/puppet/latest/reference/ssl_attributes_extensions.html
 # Create the directory
 
 new-item c:\ProgramData\PuppetLabs\puppet\etc\ -itemtype directory -force
