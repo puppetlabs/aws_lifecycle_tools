@@ -1,4 +1,4 @@
-### aws_lifecycle_tools
+## aws_lifecycle_tools
 Repository collecting various tools for using Puppet in Amazon
 
 These scripts and code here are provided as a work in progress,
@@ -22,6 +22,6 @@ of this [AWS Whitepaper](http://info.puppetlabs.com/GL-2016-01-WC-1873-AWS-White
   example userdata scripts for redhat and windows
 
 
-## Disclaimer
+### Disclaimer
 This is meant as example code to be used as a reference, not strictly considered
 vetted for security and ready for production environment, but is a starting point
