@@ -1,5 +1,5 @@
 ## aws_lifecycle_tools
-Repository collecting various tools for using Puppet in Amazon
+Repository collecting various tools and code snippets for using Puppet in Amazon
 
 These scripts and code here are provided as a work in progress,
 and meant to allow for community members to update and collaborate
