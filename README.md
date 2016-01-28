@@ -5,7 +5,7 @@ These scripts and code here are provided as a work in progress,
 and meant to allow for community members to update and collaborate
 on common tooling for handling Puppet nodes in AWS.
 
-Initial released in Jan of 2016, these scripts were created as part
+Initially released in Jan of 2016, these scripts were created as part
 of this [AWS Whitepaper](http://info.puppetlabs.com/GL-2016-01-WC-1873-AWS-Whitepaper_Registration.html).
 
 ## Contents
