@@ -10,16 +10,11 @@ of this [AWS Whitepaper](http://info.puppetlabs.com/GL-2016-01-WC-1873-AWS-White
 
 ## Contents
 
-* certsigner.rb
-  example certsigner to be used for policy based autosigning with trusted data
-* certsigner_addtags.json
-  IAM profile to allow certsigner to update tags
-* cloud_provisioner_user.pp
-  (untested) module to create a nonroot user for use with [puppetlabs/aws](https://forge.puppetlabs.com/puppetlabs/aws)
-* create_trusted_rule.sh
-  for PE users, a way to create trusted rules in the NC via API
-* userdata
-  example userdata scripts for redhat and windows
+* certsigner.rb - example certsigner to be used for policy based autosigning with trusted data
+* certsigner_addtags.json - IAM profile to allow certsigner to update tags
+* cloud_provisioner_user.pp - (untested) module to create a nonroot puppet agent for use with [puppetlabs/aws](https://forge.puppetlabs.com/puppetlabs/aws), useful if you want to perform ongoing configuration management of your aws environment.
+* create_trusted_rule.sh - for PE users, a way to create trusted rules in the NC via API
+* userdata - example userdata scripts for redhat and windows
 
 
 ### Disclaimer
