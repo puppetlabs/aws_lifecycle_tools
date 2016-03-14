@@ -56,7 +56,7 @@ if signed != true && ami_match == true
     tags: [
       {
         key: 'puppet_cert_signed',
-        value: certname,
+        value: 'true',
       },
     ],
   })
