@@ -29,7 +29,7 @@ YAML
 rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm
 yum install -y puppet-agent
 
-$PUPPET config set master $PUPPET_MASTER --section agent
+$PUPPET config set server $PUPPET_MASTER --section main
 $PUPPET config set certname $INSTANCE_ID --section agent
 
 $PUPPET resource service puppet ensure=running enable=true
